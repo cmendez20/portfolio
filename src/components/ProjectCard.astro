@@ -1,0 +1,55 @@
+---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import localCocktailImage from '../assets/portfolio-cocktail-app.png';
+
+interface Project {
+   title: string;
+   imageUrl: string;
+   skills: string[];
+   demoUrl: string;
+   codeUrl: string;
+   id: number;
+}
+
+
+const project = Astro.props;
+const { title, imageUrl, skills, demoUrl, codeUrl } = project;
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/*.{jpeg,jpg,png,gif}')
+if (!images[imageUrl]) throw new Error(`"${imageUrl}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`);
+---
+
+<div class="max-w-80 max-[500px]:mx-auto mb-8 rounded-md bg-slate-100 shadow-md md:flex md:pb-0 md:mb-16 min-[500px]:max-w-full">
+  <Image
+    class="w-full h-48 object-cover aspect-square md:h-full md:w-64"
+    src={images[imageUrl]()}
+    alt={title}
+  />
+
+  <div class="relative flex flex-col py-8 gap-6 justify-center items-center md:items-start md:pl-8">
+    <h3 class="font-bold text-lg md:text-xl">{title}</h3>
+    <div class="flex gap-4 flex-wrap">
+      {skills.map(skill => (
+        <p class="text-slate-600 text-base md:text-lg">
+          {skill}
+        </p>
+      ))}
+    </div>
+    <div class="flex gap-8">
+      <a
+        href={demoUrl}
+        target="_blank"
+        class="bg-slate-700 text-white px-3 py-1 rounded-md hover:bg-slate-800 transition-colors"
+      >
+        Demo
+      </a>
+      <a
+        href={codeUrl}
+        target="_blank"
+        class="bg-slate-700 text-white px-3 py-1 rounded-md hover:bg-slate-800 transition-colors"
+      >
+        Code
+      </a>
+    </div>
+  </div>
+</div>

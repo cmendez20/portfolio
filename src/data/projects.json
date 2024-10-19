@@ -1,0 +1,34 @@
+[
+  {
+    "title": "Job Listings",
+    "imageUrl": "/src/assets/portfolio-job-listings.png",
+    "skills": ["HTML", "TailwindCSS", "React"],
+    "demoUrl": "https://job-listings-cjmendez.netlify.app",
+    "codeUrl": "https://github.com/cmendez20/job-listings",
+    "id": 1
+  },
+  {
+    "title": "Typemaster Landing Page",
+    "imageUrl": "/src/assets/portfolio-landing-page.png",
+    "skills": ["HTML", "TailwindCSS", "Responsive Design"],
+    "demoUrl": "https://typemaster-keyboards-cjmendez.netlify.app/",
+    "codeUrl": "https://github.com/cmendez20/typemaster-landing-page",
+    "id": 2
+  },
+  {
+    "title": "Etch-a-Sketch",
+    "imageUrl": "/src/assets/portfolio-etch-a-sketch.png",
+    "skills": ["HTML", "CSS", "JavaScript"],
+    "demoUrl": "https://cmendez20.github.io/etch_a_sketch/",
+    "codeUrl": "https://github.com/cmendez20/etch_a_sketch",
+    "id": 3
+  },
+  {
+    "title": "Cocktail App",
+    "imageUrl": "/src/assets/portfolio-cocktail-app.png",
+    "skills": ["HTML", "CSS", "JavaScript"],
+    "demoUrl": "https://cmendez20.github.io/cocktail-app/",
+    "codeUrl": "https://github.com/cmendez20/cocktail-app",
+    "id": 4
+  }
+]
