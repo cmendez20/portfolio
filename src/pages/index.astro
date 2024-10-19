@@ -11,7 +11,7 @@ import projects from '../data/projects.json';
 	<main class="mx-auto px-6 py-12 md:px-0 md:max-w-xl xl:max-w-3xl 2xl:max-w-4xl">
 		<Header />
 		<section>
-			<h2 class="mb-6 text-2xl">My Projects</h2>
+			<h2 class="mb-6 text-2xl font-medium text-blue-700">My Projects</h2>
 			 {projects.map(project => <ProjectCard {...project} />)}
 		</section>
 	</main>

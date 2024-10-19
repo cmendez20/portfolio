@@ -1,19 +1,29 @@
+---
+import { Icon } from 'astro-icon/components'
+---
+
 <header class="mb-12">
-  <h1 class="mb-6 text-lg leading-relaxed md:text-2xl md:leading-relaxed">
+  <h1 class="mb-6 text-lg leading-relaxed md:text-2xl md:leading-relaxed text-blue-700">
     👋 Hi, I'm Chris Mendez, a Software Engineer specializing in frontend web development.
   </h1>
 
-  <p class="mb-6">I'm currently a computer science major at Western Governors University. I have a passion for coding, learning, and building. Beyond tech, you'll find me enjoing indie films at the theater, café hopping, or learning chess.</p>
+  <p class="mb-6 text-blue-600">I'm currently a computer science major at Western Governors University. I have a passion for coding, learning, and building. Beyond tech, you'll find me enjoing indie films at the theater, café hopping, or learning chess.</p>
 
-   <p class="mb-6">I still have much more to learn, and I'm always open to exploring new opportunities, <span class="font-bold">connect with me here.</span></p>
+   <p class="mb-6 text-blue-600">I still have much more to learn and I'm always open to exploring new opportunities. <span class="font-bold">Feel free to connect with me below!</span></p>
 
-  <div class="flex gap-10">
-    <a href="https://github.com/cmendez20" class="text-slate-600 hover:underline" target="_blank">
-      github
+  <div class="flex gap-6 items-center">
+    <a href="https://github.com/cmendez20" target="_blank">
+      <!-- github -->
+      <Icon name="mdi:github" class="text-4xl transition-colors text-blue-500 hover:text-blue-700" />
     </a>
-    <a href="https://www.linkedin.com/in/cjmendez/" class="text-red-600 hover:underline" target="_blank">
-      linkedin
-
+    <a href="https://www.linkedin.com/in/cjmendez/" target="_blank">
+      <Icon name="mdi:linkedin" class="text-4xl transition-colors  text-blue-500 hover:text-blue-700" />
+    </a>
+    <a href="mailto:mendecj812@gmail.com" target="_blank">
+      <Icon name="mdi:gmail" class="text-4xl transition-colors text-blue-500 hover:text-blue-700" />
+    </a>
+    <a href="/mendez_christopher_resume.pdf" target="_blank" class="font-mono text-blue-500 transition-colors hover:text-blue-700 hover:underline">
+      Resume
     </a>
   </div>
 </header>
