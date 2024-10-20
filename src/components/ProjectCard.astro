@@ -20,7 +20,7 @@ if (!images[imageUrl]) throw new Error(`"${imageUrl}" does not exist in glob: "s
 
 <div class="max-w-80 max-[500px]:mx-auto mb-6 rounded-md bg-gray-50 shadow-md md:flex md:pb-0 md:mb-12 min-[500px]:max-w-full last:mb-0">
   <Image
-    class="w-full h-48 object-cover aspect-square md:h-full md:w-64"
+    class="w-full h-48 object-cover aspect-square rounded-tl-md rounded-tr-md md:h-full md:w-64 md:w-80 md:rounded-tr-none md:rounded-bl-md"
     src={images[imageUrl]()}
     alt={title}
   />
